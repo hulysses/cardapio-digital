@@ -7,6 +7,7 @@ input {
   border-radius: 12px;
   width: 100%;
   margin-bottom: 12px;
+  outline: none;
 }
 
 label {

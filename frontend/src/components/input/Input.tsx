@@ -10,7 +10,11 @@ export function Input({ label, value, updateValue }: InputProps) {
   return (
     <>
       <label>{label}</label>
-      <input value={value} onChange={(e) => updateValue(e.target.value)} />
+      <input
+        value={value}
+        onChange={(e) => updateValue(e.target.value)}
+        required
+      />
     </>
   );
 }
