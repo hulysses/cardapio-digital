@@ -6,11 +6,11 @@ interface InputProps {
   updateValue(value: any): void;
 }
 
-export const Input = ({ label, value, updateValue }: InputProps) => {
+export function Input({ label, value, updateValue }: InputProps) {
   return (
     <>
       <label>{label}</label>
       <input value={value} onChange={(e) => updateValue(e.target.value)} />
     </>
   );
-};
+}
