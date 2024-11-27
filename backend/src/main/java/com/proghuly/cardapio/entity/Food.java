@@ -1,5 +1,6 @@
 package com.proghuly.cardapio.entity;
 
+import com.proghuly.cardapio.DTO.FoodRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -23,4 +24,10 @@ public class Food {
     private String image;
 
     private Integer price;
+
+    public Food(FoodRequestDTO data) {
+        this.title = data.title();
+        this.image = data.image();
+        this.price = data.price();
+    }
 }
