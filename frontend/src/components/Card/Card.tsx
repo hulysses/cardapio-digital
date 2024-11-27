@@ -12,7 +12,7 @@ export function Card(props: CardProps) {
       <img src={props.image} alt={`${props.title}`} />
       <h2>{props.title}</h2>
       <p>
-        Valor: <b>{props.price}</b>
+        Valor: <b>R${props.price.toFixed(2).replace(".", ",")}</b>
       </p>
     </div>
   );
