@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-application.properties
+backend/src/main/resources/application.properties
 
 # Log file
 *.log
