@@ -23,7 +23,7 @@ public class Food {
 
     private String image;
 
-    private Integer price;
+    private double price;
 
     public Food(FoodRequestDTO data) {
         this.title = data.title();
