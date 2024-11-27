@@ -12,7 +12,7 @@ export function Card(props: CardProps) {
       <img src={props.image} alt={`${props.title}`} />
       <h2>{props.title}</h2>
       <p>
-        <b>Valor:</b>
+        Valor: <b>{props.price}</b>
       </p>
     </div>
   );
